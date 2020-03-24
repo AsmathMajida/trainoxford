@@ -24,7 +24,7 @@ Examples:
 
 
 @tc03_Oxford_Academy_buybooks
-Scenario:  Buy book from website
+Scenario: Buy book from website
 
 Given user launches the browser
 When user launches the Oxford Academy website
