@@ -6,7 +6,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class BuyBookStep {
+public class BuyBookStep
+{
+	//creating object for BuyBookPage
 	BuyBookPage book=new BuyBookPage();
 	
 	@Given("^user launches the browser$")
