@@ -13,27 +13,32 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class SearchPage
 {
 WebDriver driver;
-	
-public void launchBrowser(String browser) //Launch url
+//Launching url	
+public void launchBrowser(String browser) 
 {
 	try
 	{
+		//Launching firefox page
 		if(browser.equalsIgnoreCase("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver","src\\test\\resources\\Driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
+		//Launching chrome page
 		else if(browser.equalsIgnoreCase("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver","src/test/resources/Driver/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
+		//Launching Internet Explorer page
 		else if(browser.equalsIgnoreCase("Internet Explore"))
 		{
 			System.setProperty("webdriver.ie.driver","src\\test\\resources\\Driver\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
+	//maximizing the window
 	driver.manage().window().maximize();
+	//adding implicit wait
 	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 	}
 	catch(WebDriverException e)
@@ -41,10 +46,11 @@ public void launchBrowser(String browser) //Launch url
 		System.out.println("Browser could not be launched");
 	}
 	
-}
+        }
+	//Launching the website
 	public void homepage()
 	{
-		driver.get("https://academic.oup.com/journals");//Launching the website
+		driver.get("https://academic.oup.com/journals");
 		System.out.println(driver.getTitle());
 	}
 	// To search the journal
@@ -56,12 +62,14 @@ public void launchBrowser(String browser) //Launch url
 		driver.findElement(By.xpath("//*[@id=\"sortOrderSelect\"]")).sendKeys(Keys.DOWN);
 		driver.findElement(By.xpath("//*[@id=\"sortOrderSelect\"]")).sendKeys(Keys.ENTER);
 	}
-	public void getTitle()//getting the value and printing in the output
+	//getting the value and printing it in the console
+	public void getTitle()
 	{
 		System.out.println(driver.findElement(By.xpath("//*[@id=\"ContentColumn\"]/div[13]/h4/a")).getText());
 	}
+	//closing the website
 	public void quit()
 	{
-		driver.close();//closing the website
+		driver.close();
 	}
 }
