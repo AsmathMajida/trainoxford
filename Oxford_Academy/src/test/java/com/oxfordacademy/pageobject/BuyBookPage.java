@@ -21,26 +21,32 @@ By issue=By.xpath("//*[@id=\"main\"]/section/div/div/div[1]/div[1]/div[2]/a");
 By year=By.id("ddlSelectIssueYears");
 By buy=By.xpath("//*[@id=\"collapsible-table-0\"]/tr/td[5]/a");
 By remove=By.xpath("//*[@id=\"shopping_basket\"]/tbody/tr[2]/td[5]/input");
-public void launchBrowser(String browser) //Launch url
+//Launching url
+public void launchBrowser(String browser) 
 {
 	try
 	{
+		//Launching firefox page
 		if(browser.equalsIgnoreCase("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver","src\\test\\resources\\Driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
+		//Launching chrome page
 		else if(browser.equalsIgnoreCase("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver","src/test/resources/Driver/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
+		//Launching Internet Explorer page
 		else if(browser.equalsIgnoreCase("Internet Explore"))
 		{
 			System.setProperty("webdriver.ie.driver","src\\test\\resources\\Driver\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
+	//maximizing the window
 	driver.manage().window().maximize();
+	//Adding implicit wait
 	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 	}
 	catch(WebDriverException e)
@@ -48,10 +54,11 @@ public void launchBrowser(String browser) //Launch url
 		System.out.println("Browser could not be launched");
 	}
 	
-}
+        }
 	public void oxfordHomepage() 
 	{
-		driver.get("https://academic.oup.com/journals");//Launching the website
+		//Launching the website
+		driver.get("https://academic.oup.com/journals");
 
 	}
 	// selecting the journal
@@ -75,7 +82,8 @@ public void launchBrowser(String browser) //Launch url
 	}
 	public void close() 
 	{
-		driver.close();//closing the website
+		//closing the website
+		driver.close();
 	}
 }
 
