@@ -5,7 +5,9 @@ import com.oxfordacademy.pageobject.SearchPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-public class SearchStep {
+public class SearchStep 
+{
+	//creating object for SearchPage
 	SearchPage see=new SearchPage();
 	@Given("^The user should Launch the browser$")
 	public void the_user_should_Launch_the_browser() throws Throwable 
