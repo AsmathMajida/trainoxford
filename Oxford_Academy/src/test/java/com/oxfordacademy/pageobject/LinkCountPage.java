@@ -14,27 +14,32 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class LinkCountPage 
 {
 	WebDriver driver;
-	public void launchBrowser(String browser) //Launch url
+	//Launching url
+	public void launchBrowser(String browser) 
 	{
 		try
 		{
+			//Launching firefox page
 			if(browser.equalsIgnoreCase("firefox"))
 			{
 				System.setProperty("webdriver.gecko.driver","src\\test\\resources\\Driver\\geckodriver.exe");
 				driver = new FirefoxDriver();
 			}
+			//Launching chrome page
 			else if(browser.equalsIgnoreCase("chrome"))
 			{
 				System.setProperty("webdriver.chrome.driver","src/test/resources/Driver/chromedriver.exe");
 				driver = new ChromeDriver();
 			}
+			//Launching Internet Explorer page
 			else if(browser.equalsIgnoreCase("Internet Explore"))
 			{
 				System.setProperty("webdriver.ie.driver","src\\test\\resources\\Driver\\IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 			}
-		
+		//maximizing the window
 		driver.manage().window().maximize();
+		//Adding implicit wait
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		}
 		catch(WebDriverException e)
@@ -45,8 +50,9 @@ public class LinkCountPage
 }
 	public void oxfordHomepage() throws InterruptedException 
 	{
-		driver.get("https://academic.oup.com/journals");//Launching the website
-	
+		//Launching the website
+		driver.get("https://academic.oup.com/journals");
+	        //Adding wait time
 		Thread.sleep(5000);
 		
 	}
@@ -55,8 +61,10 @@ public class LinkCountPage
 	{
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		int linkCount=links.size();
+		//Printing LinkCount
 		System.out.println("The total number of links="+linkCount);
 	}
+	//Closing the website
 	public void close()
 	{
 		driver.close();
