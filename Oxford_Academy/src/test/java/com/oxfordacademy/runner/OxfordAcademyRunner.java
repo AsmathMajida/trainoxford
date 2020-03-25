@@ -20,7 +20,8 @@ import cucumber.api.junit.Cucumber;
 public class OxfordAcademyRunner 
 {
 	@AfterClass
-	  public static void extendReport() {
+	  public static void extendReport()
+	  {
 	      Reporter.loadXMLConfig("src/test/resources/extent-config.xml");
 	      Reporter.setSystemInfo("user", System.getProperty("user.name"));
 	      Reporter.setSystemInfo("os", "Windows");
