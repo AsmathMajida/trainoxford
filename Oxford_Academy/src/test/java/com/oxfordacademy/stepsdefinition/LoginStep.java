@@ -7,10 +7,12 @@ import com.oxfordacademy.pageobject.LoginPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
-public class LoginStep {
+public class LoginStep 
+{
 
 		WebDriver driver; 
-		 LoginPage validlog = new LoginPage(driver);
+	        //creating object for LoginPage
+		LoginPage validlog = new LoginPage(driver);
 
 		@Given("^the user launch chrome$")
 		public void the_user_launch_chrome() throws Throwable 
@@ -25,8 +27,8 @@ public class LoginStep {
 		}
 
 		@Then("^the user login using \"([^\"]*)\" and \"([^\"]*)\" with vaild and invaild details$")
-		public void the_user_login_using_and_with_vaild_and_invaild_details(String emailId, String password) throws Throwable {
-		    // Write code here that turns the phrase above into concrete actions
+		public void the_user_login_using_and_with_vaild_and_invaild_details(String emailId, String password) throws Throwable 
+		{
 			validlog.oxfordDetails(emailId, password);
 		}
 		
