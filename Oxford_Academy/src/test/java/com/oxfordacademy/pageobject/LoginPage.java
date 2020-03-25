@@ -1,10 +1,14 @@
 package com.oxfordacademy.pageobject;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -73,11 +77,15 @@ public class LoginPage
 			Thread.sleep(2000);
 		}
 		//closing the website	
-		public void oxfordClose() throws InterruptedException, IOException 
+		//screenshot
+		public void screenshot(String path) throws InterruptedException, IOException
 		{
+			Thread.sleep(4000);
+			TakesScreenshot snap = (TakesScreenshot)driver;
+			File source = snap.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(source, new File(path));
 			Thread.sleep(3000);
 			driver.close();
 		}
-
 	}
 

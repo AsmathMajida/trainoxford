@@ -31,7 +31,7 @@ public class RegisterStep
 	@Then("^close the browser$")
 	public void close_browser() throws Throwable 
 	{
-           validreg.exit();
+           validreg.screenshot("src/test/resources/Screenshot/register.png");
 	}
 
 }

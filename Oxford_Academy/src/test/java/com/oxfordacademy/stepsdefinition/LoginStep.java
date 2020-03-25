@@ -35,7 +35,7 @@ public class LoginStep
 		@Then("^the user closes the browser$")
 		public void the_user_closes_the_browser() throws Throwable
 		{
-		   validlog.oxfordClose();
+		   validlog.screenshot("src/test/resources/Screenshot/login.png");
 		}
 	}
 

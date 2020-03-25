@@ -36,7 +36,7 @@ public class SearchStep
 	@Then("^the user should close the browser$")
 	public void the_user_should_close_the_browser() throws Throwable 
 	{
-	    see.quit();
+	    see.screenshot("src/test/resources/Screenshot/search.png");
 	}
 
 }

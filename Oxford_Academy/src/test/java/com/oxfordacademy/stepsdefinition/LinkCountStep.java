@@ -31,7 +31,7 @@ public class LinkCountStep
 	@Then("^closes the page$")
 	public void closes_the_page() throws Throwable
 	{
-	 count.close();
+	 count.screenshot("src/test/resources/Screenshot/linkpage.png");
 	}
 
 }

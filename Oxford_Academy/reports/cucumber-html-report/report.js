@@ -50,28 +50,28 @@ formatter.match({
   "location": "RegisterStep.launch_Chrome_browser()"
 });
 formatter.result({
-  "duration": 4724720300,
+  "duration": 3714397500,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStep.open_Oxford_Academy_website()"
 });
 formatter.result({
-  "duration": 8666229400,
+  "duration": 11984542200,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStep.register_the_valid_details()"
 });
 formatter.result({
-  "duration": 17743792300,
+  "duration": 17274139600,
   "status": "passed"
 });
 formatter.match({
   "location": "RegisterStep.close_browser()"
 });
 formatter.result({
-  "duration": 5232047400,
+  "duration": 7586123100,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -195,14 +195,14 @@ formatter.match({
   "location": "LoginStep.the_user_launch_chrome()"
 });
 formatter.result({
-  "duration": 3099587300,
+  "duration": 2175282700,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.the_user_opens_website()"
 });
 formatter.result({
-  "duration": 9006415400,
+  "duration": 9770549300,
   "status": "passed"
 });
 formatter.match({
@@ -219,14 +219,14 @@ formatter.match({
   "location": "LoginStep.the_user_login_using_and_with_vaild_and_invaild_details(String,String)"
 });
 formatter.result({
-  "duration": 5057288300,
+  "duration": 5141900800,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.the_user_closes_the_browser()"
 });
 formatter.result({
-  "duration": 7266961500,
+  "duration": 11751734700,
   "status": "passed"
 });
 formatter.scenario({
@@ -275,14 +275,14 @@ formatter.match({
   "location": "LoginStep.the_user_launch_chrome()"
 });
 formatter.result({
-  "duration": 2174437000,
+  "duration": 1857881100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.the_user_opens_website()"
 });
 formatter.result({
-  "duration": 9873287000,
+  "duration": 9445599300,
   "status": "passed"
 });
 formatter.match({
@@ -299,14 +299,14 @@ formatter.match({
   "location": "LoginStep.the_user_login_using_and_with_vaild_and_invaild_details(String,String)"
 });
 formatter.result({
-  "duration": 5643136800,
+  "duration": 5111113300,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.the_user_closes_the_browser()"
 });
 formatter.result({
-  "duration": 7420458500,
+  "duration": 11693830900,
   "status": "passed"
 });
 formatter.scenario({
@@ -355,14 +355,14 @@ formatter.match({
   "location": "LoginStep.the_user_launch_chrome()"
 });
 formatter.result({
-  "duration": 2453387700,
+  "duration": 1698377100,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.the_user_opens_website()"
 });
 formatter.result({
-  "duration": 6469840700,
+  "duration": 8352997100,
   "status": "passed"
 });
 formatter.match({
@@ -379,14 +379,14 @@ formatter.match({
   "location": "LoginStep.the_user_login_using_and_with_vaild_and_invaild_details(String,String)"
 });
 formatter.result({
-  "duration": 5918244300,
+  "duration": 5069213500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.the_user_closes_the_browser()"
 });
 formatter.result({
-  "duration": 7450734300,
+  "duration": 12695876200,
   "status": "passed"
 });
 formatter.scenario({
@@ -432,35 +432,35 @@ formatter.match({
   "location": "BuyBookStep.user_launches_the_browser()"
 });
 formatter.result({
-  "duration": 3992048500,
+  "duration": 2034618900,
   "status": "passed"
 });
 formatter.match({
   "location": "BuyBookStep.user_launches_the_Oxford_Academy_website()"
 });
 formatter.result({
-  "duration": 7535519500,
+  "duration": 7930697300,
   "status": "passed"
 });
 formatter.match({
   "location": "BuyBookStep.user_selects_Diplomatic_history()"
 });
 formatter.result({
-  "duration": 7591706200,
+  "duration": 7016151500,
   "status": "passed"
 });
 formatter.match({
   "location": "BuyBookStep.purchase_book()"
 });
 formatter.result({
-  "duration": 14304642300,
+  "duration": 12391121500,
   "status": "passed"
 });
 formatter.match({
   "location": "BuyBookStep.close_the_page()"
 });
 formatter.result({
-  "duration": 194433100,
+  "duration": 7551276800,
   "status": "passed"
 });
 formatter.scenario({
@@ -506,35 +506,35 @@ formatter.match({
   "location": "SearchStep.the_user_should_Launch_the_browser()"
 });
 formatter.result({
-  "duration": 3333828500,
+  "duration": 1993896200,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStep.the_user_should_opens_the_Oxford_Academy()"
 });
 formatter.result({
-  "duration": 8320873700,
+  "duration": 8243484600,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStep.the_user_enters_journal_name_in_search_box()"
 });
 formatter.result({
-  "duration": 4869449900,
+  "duration": 4698067500,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStep.the_user_gets_the_title_and_prints()"
 });
 formatter.result({
-  "duration": 81936100,
+  "duration": 73015700,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchStep.the_user_should_close_the_browser()"
 });
 formatter.result({
-  "duration": 397157200,
+  "duration": 7560369600,
   "status": "passed"
 });
 formatter.scenario({
@@ -575,28 +575,28 @@ formatter.match({
   "location": "LinkCountStep.user_launches_the_chrome_browser()"
 });
 formatter.result({
-  "duration": 2762836400,
+  "duration": 1821455000,
   "status": "passed"
 });
 formatter.match({
   "location": "LinkCountStep.user_opens_the_webpage_and_logs_in()"
 });
 formatter.result({
-  "duration": 16928723600,
+  "duration": 12865172200,
   "status": "passed"
 });
 formatter.match({
   "location": "LinkCountStep.user_counts_the_number_of_journals_and_prints()"
 });
 formatter.result({
-  "duration": 47922900,
+  "duration": 41098300,
   "status": "passed"
 });
 formatter.match({
   "location": "LinkCountStep.closes_the_page()"
 });
 formatter.result({
-  "duration": 4164549200,
+  "duration": 11913845200,
   "status": "passed"
 });
 });

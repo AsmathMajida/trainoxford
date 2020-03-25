@@ -38,7 +38,7 @@ public class BuyBookStep
 	@Then("^close the page$")
 	public void close_the_page() throws Throwable 
 	{
-	  book.close();
+	  book.screenshot("src/test/resources/Screenshot/Buybook.png");
 
 	}
 	
