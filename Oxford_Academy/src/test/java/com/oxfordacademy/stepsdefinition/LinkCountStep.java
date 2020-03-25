@@ -6,8 +6,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LinkCountStep {
-	
+public class LinkCountStep
+{
+	//creating object for LinkCountPage
 	LinkCountPage count=new LinkCountPage();
 	@Given("^user launches the chrome browser$")
 	public void user_launches_the_chrome_browser() throws Throwable
