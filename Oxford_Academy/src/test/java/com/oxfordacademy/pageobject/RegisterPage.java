@@ -64,12 +64,12 @@ public class RegisterPage
 			System.out.println(driver.getTitle());
 		}
 		//Enter the details for valid registration
-		public void registerDetails() throws InterruptedException
+		public void registerDetails(String useranme, String pass) throws InterruptedException
 		{
 			driver.findElement(register).click();
-			driver.findElement(email).sendKeys("majida.maji98@gmail.com");
+			driver.findElement(email).sendKeys(useranme);
 			Thread.sleep(3000);
-			driver.findElement(password).sendKeys("Majidaa@98");
+			driver.findElement(password).sendKeys(pass);
 			Thread.sleep(3000);
 			driver.findElement(password).sendKeys(Keys.TAB);
 			driver.findElement(confirm_password).sendKeys("Majidaa@98");
