@@ -9,7 +9,8 @@ public class RegisterStep
 {
 	//creating object for RegisterPage
 	RegisterPage validreg=new RegisterPage();
-
+	Excel ec=new Excel();
+	
 	@Given("^Launch the Chrome browser$")
 	public void launch_Chrome_browser() throws Throwable
 	{
@@ -25,7 +26,7 @@ public class RegisterStep
 	@Then("^register the details$")
 	public void register_the_valid_details() throws Throwable 
 	{
-	   validreg.registerDetails();
+	   validreg.registerDetails(ec.excel_emailid(1), ec.excel_password(1));
 	}
 
 	@Then("^close the browser$")
