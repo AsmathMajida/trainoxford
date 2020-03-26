@@ -14,7 +14,7 @@ public class Excel
 {
 	public int row_count() throws IOException 
 	{
-		FileInputStream fil=new FileInputStream(new File("src/test/resources/Excel/Data.xlsx"));
+		FileInputStream fil=new FileInputStream(new File("src/test/resources/Excel/Datas.xlsx"));
 		XSSFWorkbook workbook=new XSSFWorkbook(fil);
 		XSSFSheet sheet=workbook.getSheet("details");
 		int rowcount=sheet.getLastRowNum();//count the number of rows
@@ -23,7 +23,7 @@ public class Excel
 	}
 	public String excel_emailid(int x) throws IOException 
 	{
-		FileInputStream fil=new FileInputStream(new File("src/test/resources/Excel/Data.xlsx"));
+		FileInputStream fil=new FileInputStream(new File("src/test/resources/Excel/Datas.xlsx"));
 		XSSFWorkbook workbook=new XSSFWorkbook(fil);
 		XSSFSheet sheet=workbook.getSheet("details");
 
@@ -37,7 +37,7 @@ public class Excel
 	
 	public String excel_password(int y) throws IOException 
 	{
-		FileInputStream fil=new FileInputStream(new File("src/test/resources/Excel/Data.xlsx"));
+		FileInputStream fil=new FileInputStream(new File("src/test/resources/Excel/Datas.xlsx"));
 		XSSFWorkbook workbook=new XSSFWorkbook(fil);
 		XSSFSheet sheet=workbook.getSheet("details");
 
